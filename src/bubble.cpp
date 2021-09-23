@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void BubbleSort(int array[], int size, bool debug = false)
+void BubbleSort(int arr[], int size, bool debug = false)
 {
     int i, j;
 
@@ -24,16 +24,16 @@ void BubbleSort(int array[], int size, bool debug = false)
         {
             step_count++;
 
-            if (array[j] > array[j + 1])
+            if (arr[j] > arr[j + 1])
             {
-                swap(array[j], array[j + 1]);
+                swap(arr[j], arr[j + 1]);
 
                 if (debug)
                 {
                     cout << "  Passo: " << step_count << endl
                          << "    - ";
 
-                    PrintArray(array, size);
+                    PrintArray(arr, size);
 
                     cout << endl;
                 }
@@ -43,6 +43,13 @@ void BubbleSort(int array[], int size, bool debug = false)
 
     if (debug)
     {
+        cout << "  ARRAY FINAL: " << endl
+             << "    - ";
+
+        PrintArray(arr, size);
+
+        cout << endl;
+
         cout << "  ESTATISTICAS: " << endl;
         cout << "    - Numero de passos: " << step_count << endl;
         cout << endl;

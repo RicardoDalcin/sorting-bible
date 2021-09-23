@@ -6,6 +6,6 @@
 
 using namespace std;
 
-void BubbleSort(int array[], int size, bool debug = false);
+void BubbleSort(int arr[], int size, bool debug = false);
 
 #endif
