@@ -1,3 +1,9 @@
+# Compilation target folder
+/bin
+
+# Visual Studio Code tasks and launch setup
+/.vscode
+
 # Prerequisites
 *.d
 
